@@ -18,3 +18,9 @@ class LoginPageLocators:
     REGISTRATION_PASSWORD_LINK = (By.XPATH, "//input[@name='registration-password1']")
     REGISTRATION_PASSWORD_REPEAT_LINK = (By.XPATH, "//input[@name='registration-password2']")
     REGISTRATION_SUBMIT_BUTTON_LINK = (By.XPATH, "//button[@name='registration_submit']")
+
+class ProductsPageLocators:
+    CART_SUBMIT_BUTTON_LINK = (By.XPATH, "//button[@class='btn btn-lg btn-primary btn-add-to-basket']")
+    ADD_INFO_POLE_LINK = (By.XPATH, "//div[@class='alert alert-safe alert-noicon alert-success  fade in']")
+    BOOK_TITLE_LINK = (By.XPATH, "//div[@class='col-sm-6 product_main']")
+    BASKET_TOTAL_LINK = (By.XPATH, "//div[@class='basket-mini pull-right hidden-xs']")
