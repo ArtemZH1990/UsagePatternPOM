@@ -27,7 +27,7 @@ class ProductPage(BasePage):
 
     def should_add_item_to_cart(self):
         self.browser.find_element(*ProductsPageLocators.BASKET_SUBMIT_BUTTON_LINK).click()
-        self.solve_quiz_and_get_code()    #If alert is appear. It's bonus method from course creators. Be careful with it!
+        #self.solve_quiz_and_get_code()    #If alert is appear. It's bonus method from course creators. Be careful with it!
 
     def should_not_be_success_message(self):
         assert self.is_not_element_present(*ProductsPageLocators.SUCCESS_MESSAGE), \
