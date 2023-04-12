@@ -1,10 +1,9 @@
-import time
-
 import pytest
-from selenium.webdriver.common.by import By
-from .Pages.main_page import MainPage
-from .Pages.login_page import LoginPage
-from .Pages.basket_page import BasketPage
+
+import allure
+from Pages.basket_page import BasketPage
+from Pages.login_page import LoginPage
+from Pages.main_page import MainPage
 
 # Locators
 link_sales_time = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209?promo=midsummer"
@@ -20,6 +19,7 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
 
 
 @pytest.mark.login_guest
+@allure.description("test guest can go to login page")
 class TestLoginFromMainPage:
     def test_guest_can_go_to_login_page(self, browser):
         link = "http://selenium1py.pythonanywhere.com/"

@@ -1,9 +1,9 @@
 import time
 import pytest
 from selenium.webdriver.common.by import By
-from .Pages.product_page import ProductPage
-from .Pages.basket_page import BasketPage
-from .Pages.login_page import LoginPage
+from Pages.product_page import ProductPage
+from Pages.basket_page import BasketPage
+from Pages.login_page import LoginPage
 from selenium import webdriver
 
 @pytest.mark.need_review
